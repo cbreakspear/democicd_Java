@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class HelloController {
+public class QuoteController {
 
 	@RequestMapping(value="/api/QuoteoftheDay",method=RequestMethod.GET, produces = "application/json")
 	public String getQuoteoftheDay() {

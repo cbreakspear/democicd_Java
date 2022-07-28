@@ -18,6 +18,6 @@ public class HelloControllerIT {
     @Test
     public void getQuoteoftheDay() throws Exception {
         ResponseEntity<String> response = template.getForEntity("/api/QuoteoftheDay", String.class);
-        assertThat(response.getBody()).isBlank(); //.isNotBlank()
+        assertThat(response.getBody()).isNotBlank(); //.isNotBlank()
     }
 }
